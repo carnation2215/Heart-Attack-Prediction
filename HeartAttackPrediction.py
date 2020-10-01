@@ -5,8 +5,8 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -112,7 +112,9 @@ models_list.append(('KNN', KNeighborsClassifier()))
 models_list.append(('LDA', LinearDiscriminantAnalysis()))
 num_folds = 10
 
+
 results = []
+
 names = []
 
 print("\nAccuracies of algorithm before scaled dataset :-\n")
